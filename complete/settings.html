@@ -51,6 +51,14 @@
   white-space: nowrap;
 }
 
+input[type="file"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
 
   </style>
   
@@ -70,7 +78,7 @@
     <!--  -->
     <div class="d-flex flex-column">
         <div class="d-flex justify-content-evenly">
-            <img src="./assets/img/team-4.jpg" class="img-fluid rounded-circle" style="width: 210px; height: 210px;">
+            <img src="./assets/img/team-4.jpg" class="img-fluid rounded-circle" style="width: 160px; height: 160px;">
         </div>
           <div class="d-flex justify-content-evenly">
               <h4 class="fs-4"><a href="index.html">Alex Smith</a></h4>
@@ -97,7 +105,7 @@
           <li class="nav-item">
             <a class="nav-link active " href="#">
               <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-album-2 text-dark text-sm opacity-10"></i>
+                <i class="ni ni-album-2  text-dark text-sm opacity-10"></i>
               </div>
               <span class="nav-link-text ms-1">Upload Post</span>
             </a>
@@ -319,87 +327,65 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Post feed -->
-    <div class="container-fluid py-4">
-        <div class="row mt-4">
-          <div class="col-lg-7 mb-lg-0 mb-4">
-            <div class="card z-index-2 h-100">
-              <div class="card-header pb-0 pt-3 bg-transparent">
-                <div class="d-flex">
-                  <div class="p-2 w-100"><h6 class="text-capitalize"><a href="#">@username</a></h6></div>
-                  <div class="p-2 flex-shrink-1"><i class="fa fa-times cursor-pointer text-dark"></i></div>
-                </div>
-                
-              </div>
-              <img src="./assets/img/marie.jpg">
-            </div>
-
-            <div class="d-flex mb-3">
-              <div class="p-2">
-                <a href="javascript:;">
-                  <i class="fa fa-star cursor-pointer text-success"></i>
-                </a>
-              </div>
-              <div class="p-2">
-                <a href="javascript:;">
-                  <i class="fa fa-comment cursor-pointer text-secondary"></i>
-                </a>
-              </div>
-              <div class="ms-auto p-2">
-                <a href="javascript:;">
-                  <i class="fa fa-download cursor-pointer text-secondary"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          
-        </div>
-
-        
-
+    <!-- form feed -->
+    <div class="align-items-start min-vh-25 mb-4 border-radius-lg" >
     </div>
-
     <div class="container-fluid py-4">
-      <div class="row mt-4">
-        <div class="col-lg-7 mb-lg-0 mb-4">
-          <div class="card z-index-2 h-100">
-            <div class="card-header pb-0 pt-3 bg-transparent">
-              <div class="d-flex">
-                <div class="p-2 w-100"><h6 class="text-capitalize"><a href="#">@username</a></h6></div>
-                <div class="p-2 flex-shrink-1"><i class="fa fa-times cursor-pointer text-dark"></i></div>
-              </div>
-              
+      <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+          <div class="card z-index-0">
+            
+            <div class="card-body">
+              <form role="form">
+                <div class="d-flex justify-content-evenly">
+                <img src="./assets/img/team-4.jpg" class="img-fluid rounded-circle" style="width: 160px; height: 160px;">
             </div>
-            <img src="./assets/img/deluxe.jpg">
-          </div>
+            <div class="d-flex justify-content-evenly align-items-center">
+            <label for="file-input">
+                <i class="fa fa-camera"></i>
+            </label>
+            <input id="file-input" type="file">
+            </div>
 
-          <div class="d-flex mb-3">
-            <div class="p-2">
-              <a href="javascript:;">
-                <i class="fa fa-star cursor-pointer text-success"></i>
-              </a>
+                <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Bio</label>
             </div>
-            <div class="p-2">
-              <a href="javascript:;">
-                <i class="fa fa-comment cursor-pointer text-secondary"></i>
-              </a>
+
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="floatingInputDisabled" placeholder="Personal Link">
+                    <label for="floatingInputDisabled">Personal Website Link</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="floatingInputDisabled" placeholder="Facebook Link">
+                    <label for="floatingInputDisabled">Facebook Link</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="floatingInputDisabled" placeholder="Twitter Link">
+                    <label for="floatingInputDisabled">Twitter Link</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="floatingInputDisabled" placeholder="Instagram Link">
+                    <label for="floatingInputDisabled">Instagram Link</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="url" class="form-control" id="floatingInputDisabled" placeholder="Linkedin Link">
+                    <label for="floatingInputDisabled">Linkedin Link</label>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Update</button>
+                </div>
+                <div class="text-center">
+                    <a href="javascript:;" class="text-dark font-weight-bolder">Back</a>
+                </div>
+              </form>
             </div>
-            <div class="ms-auto p-2">
-              <a href="javascript:;">
-                <i class="fa fa-download cursor-pointer text-secondary"></i>
-              </a>
-            </div>
+          </div>
           </div>
         </div>
-
-        
       </div>
-
-      
-
-  </div>
-    <!-- Post feed end -->
+    </div>
+    <!-- form feed end -->
   </main>
 
   <footer class="footer py-5">

@@ -34,6 +34,26 @@
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+
+  <style>
+    .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.number {
+  white-space: nowrap;
+}
+
+
+  </style>
+  
 </head>
 
 <body class="g-sidenav-show" style="background-color: rgb(228, 216, 240);">
@@ -88,7 +108,10 @@
               <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="ni ni-favourite-28 text-warning text-sm opacity-10"></i>
               </div>
-                <span class="nav-link-text ms-1">Followers <small class="text-dark rounded-circle bg-gradient-success" style="font-size: 12px;">250</small>
+                <span class="nav-link-text ms-1 d-flex justify-content-between">Followers 
+                  <div class="circle bg-gradient-success">
+                    <span class="number text-dark">250</span>
+                  </div>
               </span>
             </a>
           </li>
@@ -97,8 +120,11 @@
               <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="ni ni-camera-compact text-success text-sm opacity-10"></i>
               </div>
-              <span class="nav-link-text ms-1">Following <small class="text-dark rounded-circle bg-gradient-success" style="font-size: 12px;">10</small>
-
+              <span class="nav-link-text ms-1 d-flex justify-content-between">Following 
+                <div class="circle bg-gradient-success">
+                  <span class="number text-dark">50</span>
+                </div>
+            </span>
             </a>
           </li>
           <li class="nav-item">
@@ -179,7 +205,7 @@
                         <img src="./assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
+                        <h6 class="text-sm text-dark font-weight-normal mb-1">
                           <span class="font-weight-bold">New album</span> by Travis Scott
                         </h6>
                         <p class="text-xs text-secondary mb-0">
@@ -209,7 +235,7 @@
                         </svg>
                       </div>
                       <div class="d-flex flex-column justify-content-center">
-                        <h6 class="text-sm font-weight-normal mb-1">
+                        <h6 class="text-sm text-dark font-weight-normal mb-1">
                           Payment successfully completed
                         </h6>
                         <p class="text-xs text-secondary mb-0">
