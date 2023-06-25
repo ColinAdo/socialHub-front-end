@@ -51,9 +51,7 @@
   white-space: nowrap;
 }
 
-.custom-popover .popover {
-  background-color: #ff0000; /* Replace with your desired background color */
-}
+
   </style>
   
 </head>
@@ -69,7 +67,7 @@
     </div>
     <hr class="horizontal dark mt-0">    
     
-    <!-- profile start -->
+    <!--  -->
     <div class="d-flex flex-column">
         <div class="d-flex justify-content-evenly">
             <img src="./assets/img/team-4.jpg" class="img-fluid rounded-circle" style="width: 210px; height: 210px;">
@@ -83,39 +81,23 @@
             <a href="#" class="text-primary">Message</i></a>
           </div>
           <div class="d-flex justify-content-evenly mt-1 text-center">
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#" ><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-atom"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
           </div>
     </div>
-    <!-- profile end -->
+    <!--  -->
     <hr class="horizontal dark mt-0"> 
 
 
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav pe-2 d-flex align-items-center">
-          
           <li class="nav-item">
             <a class="nav-link active " href="#">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="fa fa-user text-success text-sm opacity-10"></i>
-              </div>
-
-              <button type="button" class="btn btn-lg bg-gradient-light" data-bs-trigger="focus"  data-bs-toggle="popover" data-bs-title="Bio"
-                data-bs-content="And here's some amazing content. It's very engaging. Right?">
-                <span class="nav-link-text ms-1">About</span>
-              </button>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active " href="#">
-              <div
-                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="ni ni-album-2 text-success text-sm opacity-10"></i>
+              <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="ni ni-album-2 text-dark text-sm opacity-10"></i>
               </div>
               <span class="nav-link-text ms-1">Upload Post</span>
             </a>
@@ -126,7 +108,7 @@
               <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="ni ni-favourite-28 text-warning text-sm opacity-10"></i>
               </div>
-                <span class="nav-link-text ms-1 d-flex justify-content-between">Followers 
+                <span class="nav-link-text ms-1 d-flex justify-content-between">Followers&nbsp;
                   <div class="circle bg-gradient-success">
                     <span class="number text-dark">250</span>
                   </div>
@@ -138,7 +120,7 @@
               <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="ni ni-camera-compact text-success text-sm opacity-10"></i>
               </div>
-              <span class="nav-link-text ms-1 d-flex justify-content-between">Following 
+              <span class="nav-link-text ms-1 d-flex justify-content-between">Following&nbsp;
                 <div class="circle bg-gradient-success">
                   <span class="number text-dark">50</span>
                 </div>
@@ -161,13 +143,16 @@
               <span class="nav-link-text ms-1">Security</span>
             </a>
           </li>
+
         </ul>
       </div>
+   
   </aside>
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
       <div class="container-fluid py-1 px-3">
+      
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group">
@@ -321,58 +306,51 @@
       </div>
     </nav>
     <!-- End Navbar -->
+    <span class="m-5">
+      <a href="">
+        <i class="ni ni-bold-left"></i>
+      </a>
+      <b>Posts</b>
+    </span>
 
-    <!-- profile Post feed -->
-
-    <div class="container text-center">
-      <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-        <!-- loop start -->
-        <div class="col">
-          <div class="p-3">
-            <a href="#">
+    <!-- Post feed -->
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-6 text-center">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <a href="profile.html">@username</a>
+              <a href=""><i class="fa fa-times cursor-pointer text-dark"></i></a>
+            </div>
               <img src="./assets/img/team-1.jpg" class="img-fluid rounded" alt="Image 1">
-            </a>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href=""><i class="fa fa-diamond cursor-pointer text-primary"> <small>30 Likes</small></i></a>
+                <a href=""><i class="fa fa-comment cursor-pointer text-primary"> <small>30 Comments</small></i></a>
+                <a href=""><i class="fa fa-download cursor-pointer text-primary"></i></a>
+              </div>
           </div>
         </div>
-        <!-- loop end -->
-        <div class="col">
-          <div class="p-3">
-            <a href="#">
-              <img src="./assets/img/team-2.jpg" class="img-fluid rounded" alt="Image 1">
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3">
-            <a href="#">
-              <img src="./assets/img/team-4.jpg" class="img-fluid rounded" alt="Image 1">
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3">
-            <a href="#">
-              <img src="./assets/img/deluxe.jpg" class="img-fluid rounded" alt="Image 1">
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3">
+      </div>
+
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-6 text-center">
             <a href="#">
               <img src="./assets/img/man.jpg" class="img-fluid rounded" alt="Image 1">
             </a>
           </div>
         </div>
-        <div class="col">
-          <div class="p-3">
-            <a href="#">
-              <img src="./assets/img/marie.jpg" class="img-fluid rounded" alt="Image 1">
-            </a>
-          </div>
+      </div>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-6 text-center">
+          <a href="#">
+            <img src="./assets/img/deluxe.jpg" class="img-fluid rounded" alt="Image 1">
+          </a>
         </div>
-        
       </div>
     </div>
+
     <!-- Post feed end -->
   </main>
 
@@ -526,11 +504,6 @@
       }
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
-
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-      });
   </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
